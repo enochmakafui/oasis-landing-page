@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop With Enoch</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <a href="/"><h1>Shop with Hodo</h1></a>
+                    <a href="#"> <li> About</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Features</li></a>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <h1>shop</h1>
+            <img src="cart_6.jpg" alt="" srcset="">
+        </div>
+        <div class="circle">
+
+        </div>
+
+    </main>
+    
+    
+<script>
+    const circleEl = document.querySelector(".circle");
+    console.log(circleEl)
+
+    document.addEventListener("pointermove",(event)=>{
+        const {clientX,clientY} = event;
+
+        circleEl.style.setProperty("--x",clientX);
+        circleEl.style.setProperty("--y",clientY);
+
+
+
+    })
+    
+    
+</script>
+</body>
+</html>
